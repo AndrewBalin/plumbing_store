@@ -1,0 +1,41 @@
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F9FF;
+}
+
+.navMenu {
+    width: 256px;
+}
+
+.mainList {
+    display: flex;
+    flexDirection: row;
+    width: min(1217px, calc((100vw * 0.65) + (32px + 256px)));
+}
+
+.subtitleCatalogBox {
+    width: min(1217px, calc((100vw * 0.65) + (32px + 256px)));
+}
+
+.subtitle {
+    align-self: start;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.products {
+    display: flex;
+    margin-top: 29px;
+    width: min(926px, calc((100vw * 0.65)));
+    padding-top: 22px;
+    padding-bottom: 22px;
+    flex-wrap: wrap;
+    gap: 32px
+}
+
