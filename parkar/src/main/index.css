@@ -1,0 +1,99 @@
+*::-webkit-scrollbar { width: 0; }
+* { -ms-overflow-style: none; }
+
+.firstBlock {
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../public/landing/firstBlock.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+
+}
+
+.firstTitle {
+
+    display: block;
+    font-family: 'Bowler';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 135%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 35%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.secondBlock {
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.thirdBlock {
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.screensContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px
+}
+
+.twoElements {
+    display: flex;
+    gap: 40px;
+    width: 1080px;
+}
+
+.threeElements {
+    display: flex;
+    gap: 40px;
+    width: 1080px;
+}
+
+.elementAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    width: 360px;
+}
+
+.titleAbout {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 145%;
+}
+
+.contentAbout {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 155%;
+}
+
+#reg {
+    display: flex;
+    flex-direction: column;
+
+}
+
