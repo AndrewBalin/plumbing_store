@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl'
 import "mapbox-gl/dist/mapbox-gl.css"
 
 // @ts-ignore
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default
+mapboxgl.workerClass = require('mapbox-gl/dist/mapbox-gl-csp-worker').default
 
 const Map = () => {
     const mapContainerRef = useRef(null)
