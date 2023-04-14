@@ -8,8 +8,13 @@ import {Router} from "react-router-dom";
 
 function Landing() {
 
+    /*useEffect(() => {
+        document.title = 'Главная'
+    }, [])*/
+
     return(
         <div>
+            <title>Главная</title>
             {FirstBlock()}
             {News()}
             {Panel()}
@@ -27,6 +32,11 @@ function FirstBlock() {
         <div className='firstBlock'>
             <div className='firstTitle'>
                 AR эффекты привлекают внимание пользователей и увеличивают их активность
+            </div>
+            <div className='landingArrow'>
+                <svg width="72" height="38" viewBox="0 0 72 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L36 36L71 1" stroke="white" stroke-width="2"/>
+                </svg>
             </div>
         </div>
     )
@@ -194,16 +204,14 @@ function Login() {
         <div className='thirdBlock'>
             <div className='title' id='reg'>
                 <span>Войти в кабинет администратора</span>
-                <div>
-                    <span style={{fontFamily: 'Gilroy'}}>Логин</span>
-                    <input type='text'/>
+                <div className='registration'>
+                    <span className='inputText'>Логин</span>
+                    <input type='text' className='inputField'/>
+                    <span className='inputText'>Пароль</span>
+                    <input type='password' className='inputField'/>
+                    <button className='login' onClick={() => window.location.assign('/menu')}>Вход</button>
+                    <span className='fogot'>Забыли пароль?</span>
                 </div>
-                <div>
-                    <span style={{fontFamily: 'Gilroy'}}>Пароль</span>
-                    <input type='password'/>
-                </div>
-                <button onClick={() => window.location.assign('/map')}>Вход
-                </button>
             </div>
         </div>
     )

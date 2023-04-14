@@ -11,8 +11,14 @@ import {
 import ParkEvents from './parks/map/parkevent'
 import ParkMap from './parks/map/parkmap'
 import Landing from './main'
+import Lenusik from './parks/map/menu'
 
 function App() {
+
+    useEffect(() => {
+        document.title = 'ParkAR'
+    }, [])
+
     return(
         <html>
             <head>
@@ -20,9 +26,10 @@ function App() {
             </head>
             <Router>
                 <Routes>
-                    <Route path='/' element={Landing()} />
-                    <Route path='/map' element={ParkMap()} />
-                    <Route path='/map/events' element={ParkEvents()} />
+                    <Route path='/' element={Landing()}/>
+                    <Route path='/menu' element={Lenusik()}/>
+                    <Route path='/map' element={ParkMap()}/>
+                    <Route path='/map/events' element={ParkEvents()}/>
                 </Routes>
 
             </Router>

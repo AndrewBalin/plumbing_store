@@ -1,0 +1,131 @@
+.menuScreen {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.menuButtons {
+    margin-top: 15%;
+    margin-left: auto;
+}
+
+.menuTitle {
+    font-family: 'BOWLER';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 155%;
+    color: #121212;
+}
+
+.menuBlock {
+    width: 380px;
+    height: 55px;
+    border-radius: 20px;
+    background: #AD00FF;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 155%;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    margin-top: 30px;
+}
+
+#blueMenuBlock {
+    background: #3BA99A;
+}
+
+.menuArrow {
+    position: absolute;
+    right: -30px;
+}
+
+.feedback {
+    margin-top: 15%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.messadge {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background:
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(to right, #AD00FF, #00FF66) border-box;
+    border-image-slice: 1;
+    width: min(560px, 40vw);
+    box-sizing: border-box;
+}
+
+.send {
+    margin-top: 28px;
+    padding-top: 30px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background:
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(to right, #AD00FF, #00FF66) border-box;
+    border-image-slice: 1;
+    width: min(560px, 40vw);
+    box-sizing: border-box;
+}
+
+.feedbackName {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 155%;
+    color: #121212;
+    margin-left: 30px;
+}
+
+.feedbackField {
+    margin: 10px 30px 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.inputFeedback {
+    flex: 2;
+    height: 50px;
+    background: #F0F0F0;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.inputFeedback:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+.sendFeedback {
+    flex: 1;
+    height: 50px;
+    background: #AD00FF;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 155%;
+    text-align: center;
+    color: #FFFFFF;
+}
