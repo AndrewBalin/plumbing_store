@@ -26,6 +26,8 @@ function Landing() {
 }
 
 export default Landing
+
+const scrollRef = React.createRef()
 function FirstBlock() {
 
     return(
@@ -33,7 +35,7 @@ function FirstBlock() {
             <div className='firstTitle'>
                 AR эффекты привлекают внимание пользователей и увеличивают их активность
             </div>
-            <div className='landingArrow'>
+            <div className='landingArrow' onClick={() => {window.scrollTo(0, scrollRef.current.scrollHeight)}}>
                 <svg width="72" height="38" viewBox="0 0 72 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1L36 36L71 1" stroke="white" stroke-width="2"/>
                 </svg>
