@@ -46,7 +46,7 @@ export default function Lenusik() {
                             </svg>
                         </div>
                     </div>
-                    <div className='menuTile'>
+                    <div className='menuTile' onClick={() => window.location.assign('/map')}>
                         <div className='menuBlock'>
                             Карта парка
                             <svg className='menuArrow' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
